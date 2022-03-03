@@ -1,4 +1,10 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using ProyectoGit4.Data;
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<ProyectoGit4Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ProyectoGit4Context")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -22,6 +28,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Personas}/{action=Index}/{id?}");
 
 app.Run();
