@@ -21,7 +21,7 @@
     },
     "resourceName": {
       "type": "string",
-      "defaultValue": "ProyectoGit420220306113036",
+      "defaultValue": "ProyectoGit420220307124323",
       "metadata": {
         "description": "Name of the main resource to be created by this template."
       }
