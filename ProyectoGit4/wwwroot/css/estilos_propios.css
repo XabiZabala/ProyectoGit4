@@ -1,0 +1,18 @@
+﻿
+body {
+    background: #FFD32D;
+}
+
+.container-manual {
+    text-align: center;
+}
+
+#imagen-index-home {
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+#imagen-index-directivos {
+    border: 5px solid black;
+    border-radius: 25px;
+}
